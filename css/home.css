@@ -61,11 +61,10 @@ body{
     width: auto;
     display: flex;
     overflow: auto;
-    padding: 0px 15px;
 }
 
 .recommend-div {
-    width: 150px;
+    min-width: 150px;
     margin-right: 10px;
     height: 200px;
     border-radius: 5px;
@@ -112,7 +111,6 @@ body{
 
 .home-menu{
     max-width: 585px;
-    padding: 0px 15px;
     height: 66px;
     overflow: hidden;
 }
@@ -120,9 +118,7 @@ body{
 .menu-ul {
     display: flex;
     overflow: auto;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 35px;
+    padding: 16px 0px 36px;
 }
 
 .ul-div {

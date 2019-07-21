@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    color: rgb(51, 51, 51);
+    font: 300 15px/1.4 PingFang SC, Helvetica Neue, Helvetica, Microsoft YaHei, Arial, sans-serif;
+    background: rgb(242, 242, 242);
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+}
+
+.home {
+    margin: 0px auto 51px;
+    background-color: white;
+    max-width: 600px;
+    min-height: 90vh;
+    .top {
+        height: 50px;
+        border-bottom: 0.1em solid rgb(242,242,242);
+        display: flex;
+        a {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            .navigation{
+                display: inline-flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 400;
+                .span{
+                    content: "";
+                    position: absolute;
+                    top: 46.5px;
+                    width: 100%;
+                    height: 3px;
+                    background-color: rgb(24, 195, 170);
+                    border-radius: 99px;
+                }
+            }
+        }
+        .selected{
+            color: rgb(24, 195, 170);
+        }
+    }
+    .central{
+        height: auto;
+        .book{
+            display: flex;
+            height: 113px;
+            border-bottom: 0.5px solid rgb(242,242,242);
+            .left{
+                display: flex;
+                align-items: center;
+                width: 25;
+                height: 113px;
+                padding-left: 15px;
+                .button{
+                    display: flex;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 999px;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgb(24, 195, 170);
+                }
+            }
+            .right{
+                display: flex;
+                flex: 1;
+                height: 77px;
+                padding: 18px 15px 18px 12px;
+                position: relative;
+                img{
+                    width: 50px;
+                    height: 70px;
+                }
+                .information{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    max-width: 438px;
+                    height: 77px;
+                    margin-left: 12px;
+                    h2{
+                        margin:0;
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: rgb(51, 51, 51);
+                    }
+                    .quality{
+                        border: 0.5px solid rgb(242,242,242);
+                        padding: 5px 6px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: rgb(102, 102, 102);
+                        border-radius: 4px;
+                    }
+                    .price{
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+                .remove{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    justify-content: flex-end;
+                    padding: 0px;
+                    width: 44px;
+                    height: 44px;
+                    border: none;
+                    background: none;
+                    svg{
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+                .lock{
+                    position: absolute;
+                    right: 15px;
+                    bottom: 18px;
+                    font-size: 12px;
+                    height: 29px;
+                    padding: 6px 10px;
+                    text-align: center;
+                    background-color: rgb(255, 255, 255);
+                    color: #18C3AA;
+                    border: 0.5px solid rgb(24, 195, 170);
+                    border-radius: 999px;
+                }
+            }
+        }
+    }
+    .locator{
+        padding: 30px 0px;
+        margin: 0 auto;
+        display: flex;
+        height: 19px;
+        justify-content: center;
+        width: 114px;
+        svg{
+            color: rgb(229,229,229);
+            transform: rotate(45deg);
+        }
+    }
+    .homepage{
+        position: fixed;
+        bottom: 180px;
+        right: 16px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(102, 102, 102, 0.96);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.bottom{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    margin: 0px auto;
+    .invite{
+        background-color: rgb(244, 252, 251);
+        color: rgb(24, 195, 170);
+        display: flex;
+        justify-content: center;
+        padding: 8px 0px;
+        font-size: 13px;
+        svg{
+            width: 1.4em;
+            vertical-align: -.3em;
+        }
+    }
+    .handle{
+        padding: 10px 15px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        .check{
+            display: flex;
+            width: 25px;
+            height: 25px;
+            border-radius: 999px;
+            justify-content: center;
+            align-items: center;
+            background: rgb(24, 195, 170);
+            flex-shrink: 0;
+        }
+        .number{
+            margin-left: 6px;
+            height: 21px;
+            flex-shrink: 0;
+        }
+        .account{
+            max-width: 346;
+            height: 40px;
+            margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            text-align: right;
+            .prices{
+                margin-left: 10px;
+                font-size: 20px;
+                line-height: 24px;
+                color: rgb(241,129,129);
+            }
+            .freight{
+                font-size: 12px;
+                white-space: nowrap;
+                color: rgb(170,170,170);
+                span{
+                    color: black;
+                }
+            }
+        }
+        .clearing{
+            color: #fff;
+            background: rgb(24, 195, 170);
+            border-color: rgb(24, 195, 170);
+            font-size: 18px;
+            text-align: center;
+            width: 132px;
+            border: 0.5 solid rgb(242, 242, 242);
+            border-radius: 3px;
+            box-sizing: border-box;
+            padding: 8px 27px;
+            white-space: nowrap;
+        }
+    }
+}
