@@ -1,8 +1,4 @@
-body{
-    background-color: rgb(242,242,242);
-    font: 300 15px/1.4 PingFang SC, Helvetica Neue, Helvetica, Microsoft YaHei, Arial, sans-serif;
-}
-
+@import "basics.css";
 .home {
     margin: 0px auto 50px;
     height: 100%;

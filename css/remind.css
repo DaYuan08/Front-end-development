@@ -1,0 +1,222 @@
+@import url(basics.css);
+.home {
+  margin: 0px auto;
+  background-color: white;
+  max-width: 600px;
+  height: 100vh;
+}
+
+.home .top {
+  height: 50px;
+  border-bottom: 0.5px solid #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .top a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .top a .navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.home .top a .navigation .span {
+  content: "";
+  position: absolute;
+  top: 46.5px;
+  width: 64px;
+  height: 3px;
+  background-color: #18c3aa;
+  border-radius: 99px;
+}
+
+.home .top .selected {
+  color: #18c3aa;
+}
+
+.home .prompt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px;
+  border-bottom: 0.5px solid #f2f2f2;
+  height: 42px;
+}
+
+.home .prompt .quantity {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #333333;
+  font-size: 14px;
+}
+
+.home .prompt .quantity span {
+  color: black;
+}
+
+.home .prompt .rule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #b1b0b1;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.home .prompt .rule svg {
+  width: 1.4em;
+}
+
+.home .book {
+  padding: 18px 15px 18px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0.5px solid #f2f2f2;
+  position: relative;
+}
+
+.home .book .stockout {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  color: white;
+  width: 50px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.home .book img {
+  width: 50px;
+  height: 70px;
+}
+
+.home .book .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home .book .info .title h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.home .book .info .title button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0px;
+  border: 0 none;
+  background: none;
+}
+
+.home .book .info .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home .book .info .bottom .price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 16px;
+  font-weight: 400;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  line-height: 1.13;
+}
+
+.home .book .info .bottom .price span {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.home .book .info .bottom .cancel {
+  font: inherit;
+  font-size: 12px;
+  font-weight: 300;
+  color: #887e74;
+  padding: 6px 12px;
+  border: 0.5px solid #f2f2f2;
+  border-radius: 99px;
+  background: white;
+}
+
+.home .homepage {
+  position: fixed;
+  bottom: 180px;
+  right: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(102, 102, 102, 0.96);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .locator {
+  padding: 30px 0px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 19px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 114px;
+}
+
+.home .locator svg {
+  color: #e5e5e5;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=remind.css.map */

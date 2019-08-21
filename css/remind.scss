@@ -1,0 +1,176 @@
+@import url(basics.css);
+
+.home {
+    margin: 0px auto;
+    background-color: white;
+    max-width: 600px;
+    height: 100vh;
+
+    .top {
+        height: 50px;
+        border-bottom: 0.5px solid rgb(242, 242, 242);
+        display: flex;
+
+        a {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+
+            .navigation {
+                display: inline-flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 400;
+
+                .span {
+                    content: "";
+                    position: absolute;
+                    top: 46.5px;
+                    width: 64px;
+                    height: 3px;
+                    background-color: rgb(24, 195, 170);
+                    border-radius: 99px;
+                }
+            }
+        }
+
+        .selected {
+            color: rgb(24, 195, 170);
+        }
+    }
+
+    .prompt {
+        display: flex;
+        align-items: center;
+        padding: 0px 15px;
+        border-bottom: 0.5px solid rgb(242, 242, 242);
+        height: 42px;
+
+        .quantity {
+            flex: 1;
+            color: rgb(51, 51, 51);
+            font-size: 14px;
+
+            span {
+                color: black;
+            }
+        }
+
+        .rule {
+            display: flex;
+            align-items: center;
+            color: rgb(177, 176, 177);
+            font-size: 13px;
+            font-weight: 300;
+
+            svg {
+                width: 1.4em;
+            }
+        }
+    }
+
+    .book {
+        padding: 18px 15px 18px 12px;
+        display: flex;
+        border: 0.5px solid rgb(242, 242, 242);
+        position: relative;
+        .stockout {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 12px;
+            color: white;
+            width: 50px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+        }
+
+        img {
+            width: 50px;
+            height: 70px;
+        }
+
+        .info {
+            flex: 1;
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                h3 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    margin: 0;
+                    color: #333;
+                }
+
+                button {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 44px;
+                    height: 44px;
+                    padding: 0px;
+                    border: 0 none;
+                    background: none;
+                }
+            }
+
+            .bottom {
+                display: flex;
+
+                .price {
+                    flex: 1;
+                    font-size: 16px;
+                    font-weight: 400;
+                    align-self: flex-end;
+                    line-height: 1.13;
+
+                    span {
+                        font-size: 12px;
+                        color: rgb(170, 170, 170);
+                    }
+                }
+
+                .cancel {
+                    font: inherit;
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgb(136, 126, 116);
+                    padding: 6px 12px;
+                    border: 0.5px solid rgb(242, 242, 242);
+                    border-radius: 99px;
+                    background: white;
+                }
+            }
+        }
+    }
+
+    .homepage {
+        position: fixed;
+        bottom: 180px;
+        right: 16px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(102, 102, 102, 0.96);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .locator {
+        padding: 30px 0px;
+        margin: 0 auto;
+        display: flex;
+        height: 19px;
+        justify-content: center;
+        width: 114px;
+
+        svg {
+            color: rgb(229, 229, 229);
+            transform: rotate(45deg);
+        }
+    }
+}
